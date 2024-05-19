@@ -1,0 +1,953 @@
+:root{
+    --dark-grey:#1E1F1F;
+    --Yellow:#E9D416;
+    --white:#FFFFFF;
+    --complementary-to-Yellow: #162BE9;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Cabin', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+                                                                                /*For Phones in general*/
+@media (max-width : 425px){
+    body{
+        font-size: 0.8rem;
+        color: var(--white);
+    }
+    #Hero_Section{
+      background-color: var(--dark-grey);
+    }
+    
+    .Nav_bar{
+       list-style: none;
+       background-color: var(--dark-grey);
+       color: white;
+       text-align: center;
+    }
+    .Nav_bar li{
+        display: inline-block;
+        padding: 0.1rem;
+        
+    }
+
+    .Nav_bar_Links{
+        text-decoration: none;
+        color: var(--white);
+    }
+
+    .Nav_bar li:hover{
+        color: var(--Yellow);
+        text-decoration: underline var(--Yellow);
+    }
+
+   
+
+    .CTA{
+        border: none;
+        border-radius: 3px;
+        background-color:var(--Yellow);
+        color: var(--white);
+        font-family: "Satoshi", sans-serif;
+        font-size: 1em;
+        margin: 5px;
+        padding: 5px;
+        text-decoration: none;
+        transition: transform 0.3s, background-colour 0.3s, color 0.3s;
+    }
+    .Hero_Container .CTA{
+        margin: 1em;
+    }
+
+    .Hero_Container .CTA:hover{
+        background-color: var(--complementary-to-Yellow);
+        cursor: pointer;
+        transform: translateY(-3px);
+    }
+    .CTA:hover{
+        background-color: var(--complementary-to-Yellow);
+        cursor: pointer;
+    }
+
+    .Hero_Container{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero_text {
+        padding: 0px 10px 10px 10px;
+    }
+  
+    h1{
+        color: var(--Yellow);
+        font-family: "Satoshi", sans-serif;
+    }
+
+    .social_icons{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .Gmail{
+        height: 1.5em;
+        margin: 0;
+    }
+    .LinkedIn{
+        height: 1.5em;
+    }
+    .Social_buttons{
+        background-color: var(--dark-grey);
+        margin: 0.3em;
+        border-radius: 20%;
+        padding: 0.5em;
+        height: 3em;
+        width: 3em;
+        transition: ease-in transform 0.3s, background-colour 0.3s, color 0.3s
+    }
+
+
+    .Social_buttons:hover{
+        transform: translateY(-3px);
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+
+    .Profile-img{
+        border-radius: 40%;
+        margin: 10px;
+        height: 100px;
+    }
+
+    #About_Me_Page{
+        color: var(--dark-grey);
+    }
+
+    #About_Me_Page h2{
+        text-align: center;
+        margin-top: 0.3em;
+        font-family: "Satoshi", sans-serif;
+    }
+
+    .About_me_content{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .Photo_Of_Me{
+        height: 16em;
+        border-radius: 10%;
+        margin: 1em;
+        border: solid 0.2em var(--Yellow)
+    }
+
+    .About_me_content p{
+        padding-top: 1em;
+        inline-size: 11.5em;
+        overflow-wrap:break-word ;
+        text-align: left;
+        line-height: 1.5em;
+
+        
+    }
+    .About_me_hobbies_content{
+        display: flex;
+        justify-content: center;
+    }
+    .hobbies_pictures_container{
+        display: flex;
+        justify-content: center;
+        overflow-wrap:break-word;
+        inline-size: 22em;
+        margin-top: 0.5em;
+    }
+
+    .Hobbies_picture.Tatami{
+        margin-top: 1em;
+        height: 6em;
+        border-radius: 10%;
+        margin-left: 1em;
+    }
+    .Hobbies_picture.volleyball{
+        margin-top: 1em;
+        height: 6em;
+        border-radius: 10%;
+        padding: 0 0.5em 0 0.5em;
+    }
+    .About_me_info{
+        margin-left: 1em;
+        text-align: left;
+        inline-size: 11.5em;
+        line-height: 1.5em;
+    }
+
+    #Projects_Page{
+        color: var(--white);
+        background-color: var(--dark-grey);
+        padding: 0.3em;
+        margin-top: 0.5em;
+    }
+
+    #Projects_Page h2{
+        margin-top: 0.5em;
+    }
+
+    .P_title_container{
+        text-align: center;
+        color: var(--white);
+        margin: 0.8em;
+        font-family: "Satoshi", sans-serif;
+    }
+
+    .Projects_showcase_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Project{
+        margin: 1em;
+        padding: 0.5em;
+        text-align: center;
+    }
+
+    .Picture_Container{
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+        }
+
+    .Project_picture{
+        height: 11em;
+        border-radius: 10%;
+        border: solid black 3px;
+    }
+    .Project_title .Project_TechStack{
+        text-align: center;
+        margin: 0.5em;
+    }
+
+    .Project_TechStack{
+        color: var(--Yellow);
+    }
+    
+
+    .button_container{
+        display: flex;
+        justify-content: center;
+        margin: 0.5em;
+    }
+    .Project_Button{
+        background-color: var(--dark-grey);
+        margin: 0.3em;
+        border-radius: 30%;
+        padding: 0.5em;
+        transition: ease-in transform 0.3s, background-colour 0.3s, color 0.3s
+    }
+
+    .Project_Button:hover{
+        transform: translateY(-3px);
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+
+
+    .Project_Button_Image{
+        height: 2em;
+    }
+    #Contact_Me_Page{
+        color: var(--dark-grey);
+    }
+
+    .CM_title{
+        font-family: "Satoshi",sans-serif;
+        text-align: center;
+    }
+
+    .Form_Container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+
+    }
+    .Container_for_content{
+        text-align: center;
+    }
+    .Content_info{
+        margin-bottom: 0.5em;
+    }
+
+        input[type = email]{
+        font-family: "Satoshi", sans-serif;
+        width: 20em;
+    }
+
+    #Message{
+        font-family: "Satoshi", sans-serif;
+        width: 20em;
+        height: 15em;
+        margin-bottom: 1em;
+        resize:none;
+    }
+
+    .Submit_button_form{
+        border: none;
+        border-radius: 3px;
+        background-color:var(--Yellow);
+        color: var(--white);
+        font-family: "Satoshi", sans-serif;
+        font-size: 1em;
+        margin: 5px;
+        padding: 5px;
+        text-decoration: none;
+        transition: transform 0.3s, background-colour 0.3s, color 0.3s;
+
+    }
+
+    .Submit_button_form:hover{
+        background-color: var(--complementary-to-Yellow);
+        cursor: pointer;
+        transform: translateY(-3px);
+
+    }
+
+    label{
+        font-family: "Satoshi", sans-serif
+    }
+
+    #Footer_Section{
+        font-family: "Satoshi", sans-serif;
+        color: var(--white);
+        background-color: var(--dark-grey);
+        font-size: 0.7em;
+    }
+    .Footer_Info P{
+        padding: 0.5em;
+        text-align: center;
+    }
+
+    .footer_socials_container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer_social_buttons{
+        background-color: var(--dark-grey);
+        margin: 0.4em;
+        border-radius: 30%;
+        padding: 0.5em;
+        transition: ease-in transform 0.3s, background-colour 0.3s, color 0.3s
+    }
+
+    .footer_social_buttons:hover{
+        transform: translateY(-3px);
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+
+    .Footer_Gmail{
+        height: 1em;
+    }
+
+    .Footer_LinkedIn{
+        height: 1em;
+    }
+
+    .anchor_tag_container{
+        text-align: center;
+    }
+    
+    .Anchor{
+        text-decoration: none;
+        color: var(--white);
+    }
+
+    .Anchor:hover{
+        color: var(--Yellow);
+    }
+
+    /*All thats left to finish mobile is making links to demo sites for projects*/
+    /*Javascript that submits form*/
+    /*either making task bar stick or dissappear*/
+    
+    /*Start working on tablet version*/
+
+}
+
+
+
+
+
+
+
+                                                                                                        /*For tablets*/
+
+
+
+
+
+
+
+
+
+
+@media (min-width:768px){
+    .hero_text > p{
+        margin-left: 10em;
+        margin-right: 10em;
+    }
+
+     body{
+        font-size: 0.9rem;
+        color: var(--white);
+    }
+    #Hero_Section{
+      background-color: var(--dark-grey);
+    }
+    
+    .Nav_bar{
+        list-style: none;
+        background-color: var(--dark-grey);
+        color: white;
+        text-align: center;
+     }
+     .Nav_bar li{
+         display: inline-block;
+         padding: 0.1rem;
+         
+     }
+ 
+     .Nav_bar_Links{
+         text-decoration: none;
+         color: var(--white);
+     }
+ 
+     .Nav_bar li:hover{
+         color: var(--Yellow);
+         text-decoration: underline var(--Yellow);
+     }
+
+    .CTA{
+        border: none;
+        border-radius: 5px;
+        background-color:var(--Yellow);
+        color: var(--white);
+        font-family: "Cabin", sans-serif;
+        font-size: 1em;
+        margin: 5px;
+        padding: 5px;
+        text-decoration: none;
+        transition: transform 0.3s, background-colour 0.3s, color 0.3s;
+    }
+    .Hero_Container .CTA{
+        margin: 1em;
+    }
+
+    .Hero_Container .CTA:hover{
+        background-color: var(--complementary-to-Yellow);
+        cursor: pointer;
+        transform: translateY(-3px);
+    }
+    .CTA:hover{
+        background-color: var(--complementary-to-Yellow);
+        cursor: pointer;
+    }
+
+    .Hero_Container{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero_text {
+        padding: 0px 10px 10px 10px;
+    }
+  
+    h1{
+        color: var(--Yellow);
+        font-family: "Satoshi", sans-serif;
+    }
+
+    .social_icons{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .Gmail{
+        height: 1.5em;
+        margin: 0;
+    }
+    .LinkedIn{
+        height: 1.5em;
+    }
+    .Social_buttons{
+        background-color: var(--dark-grey);
+        margin: 0.3em;
+        border-radius: 20%;
+        padding: 0.5em;
+        height: 3em;
+        width: 3em;
+        transition: ease-in transform 0.3s, background-colour 0.3s, color 0.3s
+    }
+
+
+    .Social_buttons:hover{
+        transform: translateY(-3px);
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+
+
+
+    #About_Me_Page{
+        color: var(--dark-grey);
+    }
+
+    #About_Me_Page h2{
+        text-align: center;
+        margin-top: 0.3em;
+        font-family: "Satoshi", sans-serif;
+    }
+
+    .About_me_content{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .Photo_Of_Me{
+        height: 16em;
+        border-radius: 10%;
+        margin: 1em;
+        border: solid 0.2em var(--Yellow)
+    }
+
+    .About_me_content p{
+        padding-top: 1em;
+        inline-size: 14.5em;
+        overflow-wrap:break-word ;
+        text-align: left;
+        line-height: 1.5em;
+        
+        
+    }
+    .About_me_hobbies_content{
+        display: flex;
+        justify-content: center;
+        overflow-wrap:break-word ;
+    }
+    .hobbies_pictures_container{
+        display: flex;
+        justify-content: center;
+        overflow-wrap:break-word;
+        inline-size: 23.3em;
+        margin-top: 0.5em;
+    }
+
+    .Hobbies_picture.Tatami{
+        margin-top: 1em;
+        height: 6em;
+        border-radius: 10%;
+        margin-left: 1em;
+    }
+    .Hobbies_picture.volleyball{
+        margin-top: 1em;
+        height: 6em;
+        border-radius: 10%;
+        margin-right: 0.1em;
+        margin-left: 0.7em;
+    }
+    .About_me_info{
+        margin-left: 1em;
+        text-align: left;
+        inline-size: 14.5em;
+        line-height: 1.5em;
+    }
+
+    #Projects_Page{
+        color: var(--white);
+        background-color: var(--dark-grey);
+        padding: 0.3em;
+        margin-top: 0.5em;
+    }
+
+    #Projects_Page h2{
+        margin-top: 0.5em;
+    }
+
+    .P_title_container{
+        text-align: center;
+        color: var(--white);
+        margin: 0.8em;
+        font-family: "Satoshi", sans-serif;
+    }
+
+    .Projects_showcase_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Project{
+        margin: 1em;
+        padding: 0.5em;
+        text-align: center;
+    }
+
+    .Picture_Container{
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+        }
+
+    .Project_picture{
+        height: 11em;
+        border-radius: 10%;
+        border: solid black 3px;
+    }
+    .Project_title .Project_TechStack{
+        text-align: center;
+        margin: 0.5em;
+    }
+
+    .Project_TechStack{
+        color: var(--Yellow);
+    }
+    
+
+    .button_container{
+        display: flex;
+        justify-content: center;
+        margin: 0.5em;
+    }
+    .Project_Button{
+        background-color: var(--dark-grey);
+        margin: 0.3em;
+        border-radius: 30%;
+        padding: 0.5em;
+        transition: ease-in transform 0.3s, background-colour 0.3s, color 0.3s
+    }
+
+    .Project_Button:hover{
+        transform: translateY(-3px);
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+
+
+    .Project_Button_Image{
+        height: 2em;
+    }
+    #Contact_Me_Page{
+        color: var(--dark-grey);
+    }
+
+    .CM_title{
+        font-family: "Satoshi",sans-serif;
+        text-align: center;
+    }
+
+    .Form_Container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+
+    }
+    .Container_for_content{
+        text-align: center;
+    }
+    .Content_info{
+        margin-bottom: 0.5em;
+    }
+
+        input[type = email]{
+        font-family: "Satoshi", sans-serif;
+        width: 20em;
+    }
+
+    #Message{
+        font-family: "Satoshi", sans-serif;
+        width: 20em;
+        height: 15em;
+        margin-bottom: 1em;
+        resize:none;
+    }
+
+    .Submit_button_form{
+        border: none;
+        border-radius: 3px;
+        background-color:var(--Yellow);
+        color: var(--white);
+        font-family: "Satoshi", sans-serif;
+        font-size: 1em;
+        margin: 5px;
+        padding: 5px;
+        text-decoration: none;
+        transition: transform 0.3s, background-colour 0.3s, color 0.3s;
+
+    }
+
+    .Submit_button_form:hover{
+        background-color: var(--complementary-to-Yellow);
+        cursor: pointer;
+        transform: translateY(-3px);
+
+    }
+
+    label{
+        font-family: "Satoshi", sans-serif
+    }
+
+    #Footer_Section{
+        font-family: "Satoshi", sans-serif;
+        color: var(--white);
+        background-color: var(--dark-grey);
+        font-size: 0.7em;
+    }
+    .Footer_Info P{
+        padding: 0.5em;
+        text-align: center;
+    }
+
+    .footer_socials_container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer_social_buttons{
+        background-color: var(--dark-grey);
+        margin: 0.4em;
+        border-radius: 30%;
+        padding: 0.5em;
+        transition: ease-in transform 0.3s, background-colour 0.3s, color 0.3s
+    }
+
+    .footer_social_buttons:hover{
+        transform: translateY(-3px);
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+
+    .Footer_Gmail{
+        height: 1em;
+    }
+
+    .Footer_LinkedIn{
+        height: 1em;
+    }
+
+    .anchor_tag_container{
+        text-align: center;
+    }
+    
+    .Anchor{
+        text-decoration: none;
+        color: var(--white);
+    }
+
+    .Anchor:hover{
+        color: var(--Yellow);
+    }
+}
+
+
+                                                                                            /*For Laptop*/
+
+@media (min-width:1024px){
+
+     .hero_text > p{
+        margin-left: 10em;
+        margin-right: 10em;
+    }
+
+     body{
+        font-size: 1rem;
+        color: var(--white);
+    }
+    #Hero_Section{
+      background-color: var(--dark-grey);
+    }
+    
+    .Nav_bar{
+        list-style: none;
+        background-color: var(--dark-grey);
+        color: white;
+        text-align: right;
+        margin-right: 2em;
+     }
+     .Nav_bar li{
+         display: inline-block;
+         padding: 0.1rem;
+         
+     }
+ 
+     .Nav_bar_Links{
+         text-decoration: none;
+         color: var(--white);
+     }
+ 
+     .Nav_bar li:hover{
+         color: var(--Yellow);
+         text-decoration: underline var(--Yellow);
+     }
+
+     .About_me_content{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .Photo_Of_Me{
+        height: 18em;
+        border-radius: 10%;
+        margin: 1em;
+        border: solid 0.2em var(--Yellow)
+    }
+
+    .About_me_content p{
+        padding-top: 1em;
+        inline-size: 14.5em;
+        overflow-wrap:break-word ;
+        text-align: left;
+        line-height: 1.8em;
+        
+        
+    }
+    .About_me_hobbies_content{
+        display: flex;
+        justify-content: center;
+       
+    }
+    .hobbies_pictures_container{
+        display: flex;
+        justify-content: center;
+        overflow-wrap:break-word;
+        inline-size: 23.3em;
+        margin-top: 0.5em;
+    }
+
+    .Hobbies_picture.Tatami{
+        margin-top: 1em;
+        height: 8em;
+        border-radius: 10%;
+        margin-left: 1em;
+    }
+    .Hobbies_picture.volleyball{
+        margin-top: 1em;
+        height: 8em;
+        border-radius: 10%;
+        margin-right: 0.1em;
+        margin-left: 0.7em;
+    }
+    .About_me_info{
+        margin-left: 0.6em;
+        text-align: left;
+        inline-size: 14.5em;
+        line-height: 1.8em;
+    }
+
+    .Projects_showcase_container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .Project{
+        margin: 1em;
+        padding: 0.5em;
+        text-align: center;
+    }
+    .Project_picture{
+        height: 9em;
+        border-radius: 10%;
+        border: solid black 3px;
+    }
+    
+    .Project_title{
+        font-size: 0.9em;
+    }
+
+    .Picture_Container{
+        display: flex;
+        justify-content: center;
+        padding: 0.3em;
+        }
+
+        
+}
+
+@media (min-width:1440px){
+
+    body{
+        font-size: 1em;
+        color: var(--white);
+    }
+
+    .hero_text > p{
+        inline-size: 40em;
+    }
+
+    #Message{
+        font-family: "Satoshi", sans-serif;
+        width: 60em;
+        height: 20em;
+        margin-bottom: 1em;
+        resize:none;
+    }
+
+    
+    input[type = email]{
+        font-family: "Satoshi", sans-serif;
+        width: 60em;
+        height: 3em;
+    }
+}
+
+@media (min-width:1600px){
+    body{
+        font-size: 1.2em;
+        color: var(--white);
+    }
+
+    .Project_Button_Image{
+        height: 3em;
+    }
+
+    .Social_buttons{
+        background-color: var(--dark-grey);
+        margin: 0.3em;
+        border-radius: 20%;
+        padding: 0.5em;
+        height: 4em;
+        width: 4em;
+        transition: ease-in transform 0.3s, background-colour 0.3s, color 0.3s
+    }
+
+    .social_icon{
+        height: 2em;
+    }
+    
+
+    .Footer_Gmail{
+        height: 2em;
+    }
+
+    .Footer_LinkedIn{
+        height: 2em;
+    }
+
+    
+}
+

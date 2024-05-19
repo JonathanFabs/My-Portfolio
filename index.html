@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel = "stylesheet" href = "style.css">
+
+    <!--Fonts for website-->
+    <!--Satoshi-->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700&display=swap" rel="stylesheet">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">  
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <section id = "Hero_Section">
+    <header>
+            <div class="nav_bar_section">
+                <nav>
+                    <ul class = "Nav_bar">
+                        <a href="#Hero_Section" class = "Nav_bar_Links"><li>Home</li></a>
+                        <a href="#About_Me_Page"class = "Nav_bar_Links"><li>About</li></a>
+                        <a href="#Projects_Page" class = "Nav_bar_Links"><li>Projects</li></a>
+                        <a href="#Contact_Me_Page"><button class = "CTA">Contact me</button></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+<!--Introduction to website-->
+
+    <div class = "Hero_Container">
+        <div class="hero_text">
+            <h1>Hey! I'm Jonathan.</h1>
+            <p>An aspiring <span style = "font-family: Satoshi,sans-serif;">Web-Developer</span> with a fondness for coffee and volleyball. Interested in knowing more about me?
+            Please click the button to view my projects.
+            </p>
+            
+            <a href="#Projects_Page"><button class = "CTA">Projects</button></a>
+
+            <div class="social_icons">
+                <a href="mailto:JonathanFabunmi@Gmail.com"><button class="Social_buttons"><img src ="assets/images/gmail_icon.png" alt = " Gmail Icon" class = "social_icon Gmail"></button></a>
+                <a href="https://www.linkedin.com/in/jonathan-fabunmi/"><button class="Social_buttons"><img src = "./assets/images/linkedin_icon.png" alt = "LinkedIn Icon" class = "social_icon LinkedIn"></button></a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id = "About_Me_Page">
+    <div class = title_container>
+        <h2>About Me</h2>
+    </div>
+
+    <div class = "About_me_content">
+        <img src = "assets/images/Jonathan_Fabunmi.jpg" alt ="Image of me" class = "Photo_Of_Me">
+        <p>Born and raised in Britain, my spark for Web development was found during a module in my second year of university.
+            Seeing the freedom and flexibility of CSS, HTML, and JavaScript has not only fueled my passion during my time of study,
+            but is still my current driving force as a recent graduate.
+        </p>
+    </div>
+
+    <div class="About_me_hobbies_content">
+        <div class="hobbies_pictures_container">
+            <img src = "assets/images/Tatami_Galaxy.jpg" alt = "Tatami Galaxy book" class = "Hobbies_picture Tatami">
+            <img src = "assets/images/Volleyball.jpg" alt = "Volleyball" class = "Hobbies_picture volleyball">
+            <div class="About_me_info">
+                <p class ="About_me_info">When I'm not focusing on coding and tech, I thoroughly enjoy playing volleyball and reading.
+                 At the moment I'm reading The Tatami Galaxy, It's a must-read for any Sci-Fi fantasy fans.</p>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<section id = "Projects_Page">
+    <div class="P_title_container">
+        <h2>Projects</h2>
+    </div>
+    <div class="Projects_showcase_container">
+        <div class="first_Project Project">
+            <div class="Picture_Container"><img src = "assets/images/Frontend UI.jpg" alt = "first project picture" class ="Project_picture"></div>
+            <h3 class = "Project_title">Frontend developer task - create a UI card</h3>
+            <h4 class = "Project_TechStack">Tech-Stack: HTML & CSS</h4>
+            <p>In wanting to improve my front-end development skills I decided to try and create a UI element. The project inspiration came from an online platform called Frontend Mentor.
+            </p>
+
+            <div class="button_container">
+                <button class = "Project_Button"><a href="https://jonathanfabs.github.io/NFT-preview-card-Personal-Project-/"><img src = "./assets/images/Demo-button.png" class = "Project_Button_Image" ></a></button>
+                <button class = "Project_Button"><a href = "https://github.com/JonathanFabs/NFT-preview-card-Personal-Project-"><img src = "./assets/images/github_icon.png" class = "Project_Button_Image"></a></button>
+            </div>
+        </div>
+       
+
+        <div class="second_Project Project">
+            <div class="Picture_Container"><img src = "assets/images/Product-Preview card.jpg" alt = "second project picture" class ="Project_picture"></div>
+            <h3 class = "Project_title">Modeled perfume page for responsiveness</h3>
+            <h4 class = "Project_TechStack">Tech-Stack: HTML & CSS</h4>
+            <p>This project centers around my attempt to make a responsive UI. Within this project, I learned the different ways and methods to play around with responsive elements.
+                
+            </p>
+            <div class="button_container">
+                <button class = "Project_Button"><a href = "https://jonathanfabs.github.io/Product-Preview-Card/"><img src = "./assets/images/Demo-button.png" class = "Project_Button_Image"></a></button>
+                <button class = "Project_Button"><a href="https://github.com/JonathanFabs/Product-Preview-Card"><img src = "./assets/images/github_icon.png" class = "Project_Button_Image"></a></button>
+            </div>
+        </div>
+
+        <div class="third_Project Project">
+            <div class="Picture_Container"><img src = "assets/images/Todo_Project.png" alt = "third project picture" class ="Project_picture"></div>
+            <h3 class = "Project_title">Todo task with React.js</h3>
+            <h4 class = "Project_TechStack">Tech-Stack: React.js, HTML & CSS</h4>
+            <p>React is at the forefront of Frontend development. With this in mind, I decided to try and learn the fundamentals of React. I managed to save the data through local storage.
+            </p>
+
+            <div class="button_container">
+                <button class = "Project_Button"><a href = "https://jonathanfabs.github.io/React-Todo-List/"><img src = "./assets/images/Demo-button.png" class = "Project_Button_Image" ></a></button>
+                <button class = "Project_Button"><a href="https://github.com/JonathanFabs/React-Todo-List"><img src = "./assets/images/github_icon.png" class = "Project_Button_Image"></a></button>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<section id ="Contact_Me_Page">
+    <h2 class ="CM_title">Get in touch with me</h2>
+    <div class="Container_for_content">
+        <p class = "Content_info">I'm open to volunteering, internship, and entry-level role opportunities within the Web/Frontend development industry.</p>
+        <div class="Form_Container">
+
+            <label for = "email" class ="Email_label">Email:</label>
+            <input type = "email" id = "Email" name = "email" placeholder="Email">
+
+            <label for = "Message" class = "Message_label">Message:</label>
+            <textarea id = "Message" name = "Message" placeholder="Please write a message"></textarea>
+            
+            <input type = "submit" value="Sumbit" class ="Submit_button_form">
+        </div>
+    </div>
+</section>
+
+
+<section id="Footer_Section">
+    <footer class = "Footer_Info">
+    
+        <p>&copy;2024 Jonathan Fabunmi. All Rights Reserved</p>
+       
+        <div class="footer_socials_container">
+            <a href="mailto:JonathanFabunmi@Gmail.com"><button class = "footer_social_buttons"><img src  = "./assets/images/gmail_icon.png"" alt = "G" class = "Footer_Gmail"></button></a>
+            <a href="https://www.linkedin.com/in/jonathan-fabunmi/"><button class = "footer_social_buttons"><img src = "./assets/images/linkedin_icon.png" alt = "LinkedIn" class = "Footer_LinkedIn"></button></a>
+        </div>
+
+        <div class="anchor_tag_container">
+            <p><a href="#Hero_Section" class = "Anchor">Back To The Top</a></p>
+        </div>
+    </footer>
+</section>
+
+
+</body>
+</html>
