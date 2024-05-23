@@ -1,4 +1,4 @@
-# The creation of my Portfolio 📜:
+# The creation of my portfolio 📜:
 Hi, in this document, I'm going to briefly or attempt to briefly describe my process when creating my portfolio website. Soon after graduating from university and working on various projects, I was hit with a frustrating realization-there was no effective way to showcase them. This lack of a platform to demonstrate my skills and achievements was a significant motivator for me to create my own portfolio website.
 
 That was one of the sparks that ignited my desire to create this project. The inspiration came from seeing other people's projects. On YouTube, it's easy to find many people's work, from front-end developers to AI and engineering; the possibilities are endless. This exposure, coupled with my decision to venture into Web development, led me to look at other junior web developers' portfolios, which in turn shaped my plan for how I wanted to showcase my projects and represent myself when designing my portfolio. 
