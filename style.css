@@ -215,7 +215,7 @@ html{
     }
 
     .Project{
-        margin: 1em;
+        margin: 2em;
         padding: 0.5em;
         text-align: center;
     }
@@ -227,9 +227,9 @@ html{
         }
 
     .Project_picture{
-        height: 11em;
         border-radius: 10%;
         border: solid black 3px;
+        width: 23em;
     }
     .Project_title .Project_TechStack{
         text-align: center;
@@ -613,6 +613,7 @@ html{
 
     .Project_picture{
         height: 11em;
+        width: 20em;
         border-radius: 10%;
         border: solid black 3px;
     }
@@ -871,6 +872,7 @@ html{
     }
     .Project_picture{
         height: 9em;
+        width: 12em;
         border-radius: 10%;
         border: solid black 3px;
     }
@@ -885,6 +887,11 @@ html{
         padding: 0.3em;
         }
 
+        .fourth_Project{
+            width: 100em;
+            height: 27em;
+        }
+
         
 }
 
@@ -897,6 +904,15 @@ html{
 
     .hero_text > p{
         inline-size: 40em;
+    }
+
+    .Project_picture{
+        width: 13em;
+        height: 9em;
+    }
+    .Project{
+        width: 100em;
+        height: 23em;
     }
 
     #Message{
@@ -924,6 +940,8 @@ html{
     .Project_Button_Image{
         height: 3em;
     }
+
+    
 
     .Social_buttons{
         background-color: var(--dark-grey);
